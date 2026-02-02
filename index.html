@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI替代风险评估工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI替代风险评估工具</h1>
+            <p>通过对五个维度的评分，评估您的工作被AI替代的风险程度</p>
+        </header>
+        
+        <main>
+            <section class="assessment-form">
+                <h2>评估维度</h2>
+                
+                <div class="dimension">
+                    <h3><i class="fas fa-sync-alt"></i> 1. 任务重复性</h3>
+                    <p class="description">工作内容的标准化和可重复性程度 <strong>（1分=高度变化和定制化，5分=高度标准化和重复性）</strong></p>
+                    <div class="rating-container">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="task-repetition" value="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="task-repetition" value="2">
+                                <span>2</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="task-repetition" value="3">
+                                <span>3</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="task-repetition" value="4">
+                                <span>4</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="task-repetition" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dimension">
+                    <h3><i class="fas fa-brain"></i> 2. 决策复杂度</h3>
+                    <p class="description">工作中处理模糊信息和复杂决策的需求 <strong>（1分=极少需要复杂决策，5分=频繁需要复杂决策和判断）</strong></p>
+                    <div class="rating-container">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="decision-complexity" value="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="decision-complexity" value="2">
+                                <span>2</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="decision-complexity" value="3">
+                                <span>3</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="decision-complexity" value="4">
+                                <span>4</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="decision-complexity" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dimension">
+                    <h3><i class="fas fa-lightbulb"></i> 3. 创造需求度</h3>
+                    <p class="description">工作对原创性思维和情感表达的要求 <strong>（1分=基本不需要创造性，5分=高度依赖创造性和情感表达）</strong></p>
+                    <div class="rating-container">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="creativity-requirement" value="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="creativity-requirement" value="2">
+                                <span>2</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="creativity-requirement" value="3">
+                                <span>3</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="creativity-requirement" value="4">
+                                <span>4</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="creativity-requirement" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dimension">
+                    <h3><i class="fas fa-users"></i> 4. 人际交互深度</h3>
+                    <p class="description">工作中建立信任关系和情感共鸣的需求 <strong>（1分=极少需要深度人际互动，5分=高度依赖深度人际互动）</strong></p>
+                    <div class="rating-container">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="interpersonal-interaction" value="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="interpersonal-interaction" value="2">
+                                <span>2</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="interpersonal-interaction" value="3">
+                                <span>3</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="interpersonal-interaction" value="4">
+                                <span>4</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="interpersonal-interaction" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dimension">
+                    <h3><i class="fas fa-graduation-cap"></i> 5. 专业壁垒高度</h3>
+                    <p class="description">工作所需的经验积累和行业洞察深度 <strong>（1分=低专业壁垒，易于掌握，5分=极高专业壁垒，需要长期积累）</strong></p>
+                    <div class="rating-container">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="professional-barrier" value="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="professional-barrier" value="2">
+                                <span>2</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="professional-barrier" value="3">
+                                <span>3</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="professional-barrier" value="4">
+                                <span>4</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="professional-barrier" value="5">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button id="calculate-btn">计算结果</button>
+                    <button id="reset-btn">重置</button>
+                </div>
+            </section>
+            
+            <section class="result-section" id="result-section">
+                <h2>评估结果</h2>
+                <div class="result-content">
+                    <div class="total-score">
+                        <h3>总分</h3>
+                        <div id="total-score-value">--</div>
+                    </div>
+                    
+                    <div class="risk-level">
+                        <h3>风险等级</h3>
+                        <div id="risk-level-value">--</div>
+                        <div class="risk-indicator" id="risk-indicator"></div>
+                    </div>
+                    
+                    <div class="recommendation">
+                        <h3>未来发展建议</h3>
+                        <div id="recommendation-content">请完成所有维度的评分并点击计算结果按钮</div>
+                    </div>
+                    
+                    <div class="share-section">
+                        <h3>分享结果</h3>
+                        <div class="share-buttons">
+                            <button class="share-btn wechat" onclick="shareToWechat()">
+                                <i class="fab fa-weixin"></i>
+                                <span>微信</span>
+                            </button>
+                            <button class="share-btn moments" onclick="shareToMoments()">
+                                <i class="fab fa-weixin"></i>
+                                <span>朋友圈</span>
+                            </button>
+                            <button class="share-btn weibo" onclick="shareToWeibo()">
+                                <i class="fab fa-weibo"></i>
+                                <span>微博</span>
+                            </button>
+                            <button class="share-btn copy" onclick="copyResult()">
+                                <i class="fas fa-copy"></i>
+                                <span>复制</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-code">
+                        <img src="erweima.png" alt="微信搜一搜 统计与生活">
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <section class="resources-section">
+            <h2>相关资源</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>AI与职业发展</h3>
+                    <p>了解AI技术对各行各业的影响，提前做好职业规划</p>
+                    <a href="#" class="resource-link">了解更多 →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>未来就业趋势</h3>
+                    <p>掌握未来就业市场的变化趋势，把握发展机遇</p>
+                    <a href="#" class="resource-link">了解更多 →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI技能提升</h3>
+                    <p>学习如何与AI协作，提升工作效率和竞争力</p>
+                    <a href="#" class="resource-link">了解更多 →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>创新思维培养</h3>
+                    <p>培养创造性思维和创新能力，增强核心竞争力</p>
+                    <a href="#" class="resource-link">了解更多 →</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2024 AI替代风险评估工具 | 仅供参考，非专业职业咨询</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
